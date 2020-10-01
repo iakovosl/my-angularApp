@@ -1,0 +1,11 @@
+<h2>Movies</h2>
+
+<div *ngFor="let movie of movies; index as movieId">
+
+  <h3>
+    <a [title]="movie.name + ' details'" [routerLink]="['/movies', movieId]">
+      {{ movie.name }}
+    </a>
+  </h3>
+<!-- . . . -->
+</div>

@@ -1,0 +1,10 @@
+<p>movies-details works!</p>
+
+<h2>Movies Details</h2>
+
+<div *ngIf="movie">
+  <h3>{{ movie.name }}</h3>
+  <h4>{{ movie.price | currency }}</h4>
+  <p>{{ movie.description }}</p>
+
+</div>
